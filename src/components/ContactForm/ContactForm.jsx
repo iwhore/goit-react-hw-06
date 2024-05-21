@@ -41,14 +41,14 @@ export default function ContactForm() {
         <label className={css.label} htmlFor={textId}>
           Name
         </label>
-        <Field className={css.input} name="name" type="text" id={textId} />
+        <Field name="name" type="text" id={textId} />
         <ErrorMessage className={css.error} name="name" component="span" />
 
-        <label className={clsx(css.label, css.margin)} htmlFor={telId}>
+        <label className={clsx} htmlFor={telId}>
           Number
         </label>
-        <Field className={css.input} name="number" type="tel" id={telId} />
-        <ErrorMessage className={css.error} name="number" component="span" />
+        <Field name="number" type="tel" id={telId} />
+        <ErrorMessage name="number" component="span" />
 
         <button className={css.button} type="submit">
           Add contact
